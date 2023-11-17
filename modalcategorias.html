@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATEGORIAS</title>
+    <link rel="stylesheet" href="categorias.css"/>
+</head>
+<body>
+    <button onclick="openModal()">Abrir el Modal</button>
+    <!--Modal-->
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" tittle="Close" class="close">x</a>
+            <h1>    Agregar Categorias</h1>
+            <!--
+            <div>
+                <p>
+                    <input type="checkbox" name="confirm" id="confirm" value="yes">
+                    <label for="confirm"> He leido las condiciones</label> <br>
+                    <input type="checkbox" name="suscription" value="noticias">
+                    <label for="suscription"> Quiero recibir correos</label>
+                </p>
+        
+                </div>
+            -->
+                <div class="contenedor">
+                    <div class="checkbox">
+                    <ul>
+                        <li><input type="checkbox" name=" check1" id="check1"><label for="check1">Comida mexicana</label></li>
+                        <li><input type="checkbox" name=" check2" id="check2"><label for="check2">Tortas</label></li>
+                        <li><input type="checkbox" name=" check3" id="check3"><label for="check3">Hamburguesas</label></li>
+                        <li><input type="checkbox" name=" check4" id="check4"><label for="check4">Desayunos</label></li>
+                        <li><input type="checkbox" name=" check5" id="check5"><label for="check5">Pastas</label></li>
+                        <li><input type="checkbox" name=" check6" id="check6"><label for="check6">Pasteles</label></li>
+                        <li><input type="checkbox" name=" check7" id="check7"><label for="check7">Postres</label></li>
+                        <li><input type="checkbox" name=" check8" id="check8"><label for="check8">Light</label></li>
+                        <li><input type="checkbox" name=" check10" id="check10"><label for="check10">Niños</label></li><li>
+                        <li><input type="checkbox" name=" check9" id="check9"><label for="check9">Cero Azucar</label></li>
+                     </ul>
+                    </div>
+            <input type="button" value="Guardar" onclick="submitAndCloseModal()">
+                </div>
+        </div>   
+    </div>
+    
+    <script src="close.js"></script>
+
+    
+</body>
+</html>

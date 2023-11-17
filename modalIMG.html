@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Modal</title>
+    <link rel="stylesheet" href="Modal.css"/>
+</head>
+<body>
+
+    <button onclick="openModal()">Abrir el modal</button>
+    <!-- Modal --->
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h1>Actualiza tu Imagen</h1>
+            <div id="imagePreview"></div>
+            <div>              
+            <input type="file" name="archivo" accept=".jpg, .png" id="imageInput" onchange="previewImage()">
+            </div>       
+            <input type="button" value="Enviar" onclick="submitAndCloseModal()">
+
+            <!--script src="close.js"></script-->
+            
+        </div>
+    </div>
+<!---No olviden poner la referencia*-->
+    <script src="close.js"></script>
+    
+</body>
+</html>

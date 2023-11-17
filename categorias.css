@@ -1,0 +1,158 @@
+.modalDialog {
+	/**width: 300px; "opacidad"**/
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+/**texto**/
+.modalDialog h1 {
+	color: white;
+	font-family: 'Pacifico', cursive;
+}
+.modalDialog > div {
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 600px;
+	position: relative;
+	margin: 10% auto;
+	padding: 70px 100px 70px 100px; /* alto, 90,40, 25,90 ancho**/
+	border-radius: 10px;
+	background:  rgba(239, 166, 81);
+	/**
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999); **/
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+
+#imagePreview {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 20px;
+}
+
+#imagePreview img {
+	width: 100%;
+	height: auto;
+}
+/**diseño cerrar**/
+.close {
+	background: #ef0101;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { 
+    background: #ffffff;
+    color: #ef0101; 
+}
+
+/**diseño modal**/
+
+.modalDialog >div input[type="button"] {
+   /** text-align: center;**/
+	text-decoration: rgb(80, 33, 33);
+	color: rgb(248, 248, 248);
+	background-color: orange;
+	padding: 1em 3em;
+	border: 1px solid;
+	border-radius: 6px;
+	display: inline-block;
+	font-weight: 300;
+	transition: background-color .3s;
+
+}
+/**transicion mouse**/
+.modalDialog >div input[type="button"]:hover {
+	color:black;
+	background-color: white;
+}
+
+.modalDialog > div input[type="file"] {
+	margin-bottom: 20px;
+}
+
+/** CATEGORIAS*********************/
+.contenedor {
+	max-width: 100%;
+	margin: auto;
+    overflow: hidden;
+}
+
+.contenedor .checkbox {
+	width: auto;
+    overflow: hidden;
+}
+
+.contenedor .checkbox ul{
+	list-style: none;
+	display: flex;
+	justify-content: flex-start; /**horizo***/
+	align-items:center; /**arriba/abajo**/
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.contenedor .checkbox ul li {
+	display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.contenedor .checkbox ul li label {
+	/**display:  inline-block;**/
+    display:flex;
+	background:  rgba(239, 166, 81);
+	border: 1px solid white;
+	color: white;
+	border-radius: 10px;
+	transition: .2s all ease;
+	padding: 5px 15px;
+}
+.contenedor .checkbox ul li label:hover {
+	border: 1px solid black;
+}
+
+.contenedor .checkbox ul li input[type="checkbox"]:checked + label {
+	border: 1px solid white;
+	background: white;
+	color: rgb(0, 0, 0);
+}
+
+.contenedor .checkbox ul li input[type="checkbox"] {
+	opacity: 0;
+
+}
