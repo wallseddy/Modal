@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModalHorario</title>
+    <link rel="stylesheet" href="Modal.css"/>
+</head>
+<body>
+
+    <!--Aqui inicia tu modal-->
+    <button onclick="openModal()">Abrir el modal</button>
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h1>Actualiza tu horario</h1>
+            <div>
+            <form>
+            <label for="hora">Hora de apertura:</label>
+            <input type="time" id="hora" name="hora"> <br>
+            <label for="hora">Hora de cierre:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="time" id="hora" name="hora">
+            </form>
+            <!--no supe mover en css el boton de enviar asi que mejor puse en brrr aqui pues-->
+            <br>
+            </div>
+            <input type="button" value="Enviar" onclick="submitAndCloseModal()">
+        </div>
+    </div>
+    <script src="close.js"></script>
+</body>
+</html>
