@@ -1,0 +1,143 @@
+.modalDialog {
+	/**width: 300px; "opacidad"**/
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+    
+	
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10em;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+/**este define el modal en general**/
+.modalDialog .Modaltitulo {
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.modalDialog .modalContent {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(239, 166, 81);
+}
+
+.modalDialog .left-half,
+.modalDialog .right-half {
+    flex: 1;
+    padding: 20px;
+}
+
+.modalDialog .left-half {
+    background: rgba(239, 166, 81);
+}
+
+.modalDialog .right-half {
+    background: rgba(239, 166, 81);
+}
+/** Era para los forms 
+#oneform {
+    margin-top: 1em;
+}
+#twoform {
+    margin-top: 1em;
+}
+**/
+#referencias { /**ALGUIEN AJUSTE BIEN ESTE FORM**/
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+}
+#enviar {
+    margin-top: 2em;
+}
+form {
+    padding-bottom: 20px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: auto;
+}
+.Modaltitulo {
+    background-color: rgba(239, 166, 81); 
+}
+
+.modalTitle {
+    color: white; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.modalDialog >div input[type="button"] {
+
+	text-decoration: rgb(80, 33, 33);
+	color: rgb(255, 255, 255);
+	background-color: orange;
+	padding: 1em 3em;
+	border: 1px solid;
+	border-radius: 6px;
+	display: inline-block;
+	font-weight: 300;
+	transition: background-color .3s;
+}
+.modalDialog >div input[type="button"]:hover {
+	color:black;
+	background-color: white;
+}
+.close {
+    background: #ef0101;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 130px; 
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+

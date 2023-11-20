@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicacion</title>
+    <link rel="stylesheet" href="modalUbicacion.css"/>
+</head>
+<body>
+    <button onclick="openModal()">Abrir el modal</button>
+    
+    <!-- Modal -->
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">x</a>
+            
+            <div class="Modaltitulo">
+                <h1>Ubicacion</h1>
+                <div class="modalContent">
+                    <div class="left-half">
+                        <form action="#" method="post">
+                        
+                        <div id="oneform">
+                            <label for="url">Ubicacion (Google Maps)</label>
+                            <input type="url" name="sitio" id="url" placeholder="URL del sitio web"> 
+                        </div>
+                        </form>
+                        <form>
+                            <label for="file">*Si no cuenta con su ubicacion de su<br>restaurante en google maps agregue<br>una foto de su restaurante.</label>
+                            <input type="File" name="archivo" accept=".jpg, .png">
+                        </form>
+                    </div>  
+                    <div class="right-half">
+                        <div id="twoform">
+                            <label for="referencias">Referencias:</label>                       
+                            <input type="text" id="referencias" name="referencias" placeholder="Ingresa texto">
+                            <div id="enviar"></div>
+                            <input type="button" value="Enviar" onclick="submitAndCloseModal()">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>              
+    </div> 
+    <script src="close.js"></script> 
+</body>
+</html>
